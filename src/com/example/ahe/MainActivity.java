@@ -89,9 +89,6 @@ public class MainActivity extends Activity {
 					break;
 				case 4:
 					// ssh
-					Intent SSHActivity = new Intent(MainActivity.this,
-							SSH.class);
-					startActivity(SSHActivity);
 					break;
 				}
 			}

@@ -26,7 +26,6 @@
             </intent-filter>
         </activity>
         <activity android:name="WifiHacking"></activity>
-        <activity android:name="SSH"></activity>
     </application>
 
 </manifest>
