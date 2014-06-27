@@ -18,9 +18,11 @@ public class SSH extends Activity {
 		if (installed) {
 			// This intent will help you to launch if the package is already
 			// installed
-			Intent LaunchIntent = getPackageManager()
-					.getLaunchIntentForPackage("org.connectbot");
-			startActivity(LaunchIntent);
+			/*
+			 * Intent LaunchIntent = getPackageManager()
+			 * .getLaunchIntentForPackage("org.connectbot");
+			 * startActivity(LaunchIntent);
+			 */
 
 			System.out.println("App already installed on your phone");
 		} else {
