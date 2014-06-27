@@ -1,6 +1,7 @@
 package com.example.ahe;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -11,9 +12,20 @@ public class SSH extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ssh_layout);
 		// makesure connectbot is installed
-		checkConnectBotInstall();
+		// Put the package name here...
+		boolean installed = appInstalledOrNot("org.connectbot");
+		if (installed) {
+			// This intent will help you to launch if the package is already
+			// installed
+			Intent LaunchIntent = getPackageManager()
+					.getLaunchIntentForPackage("org.connectbot");
+			startActivity(LaunchIntent);
+
+			System.out.println("App already installed on your phone");
+		} else {
+			System.out.println("App is not installed on your phone");
+		}
 	}
 
 	private boolean appInstalledOrNot(String uri) {
@@ -27,14 +39,4 @@ public class SSH extends Activity {
 		}
 		return app_installed;
 	}
-
-	private void checkConnectBotInstall() {
-		// TODO Auto-generated method stub
-		boolean installed = appInstalledOrNot("org.connectbot");
-		if (installed = false) {
-			Toast.makeText(SSH.this, "Please install connectbot",
-					Toast.LENGTH_LONG).show();
-		}
-	}
-
 }
