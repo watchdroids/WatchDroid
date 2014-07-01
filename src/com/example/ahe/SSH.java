@@ -24,9 +24,10 @@ public class SSH extends Activity {
 			 * startActivity(LaunchIntent);
 			 */
 
-			System.out.println("App already installed on your phone");
+			Intent SSHActivity = new Intent(SSH.this,
+					SshConnection.class);
+			startActivity(SSHActivity);
 		} else {
-			System.out.println("App is not installed on your phone");
 			Toast.makeText(SSH.this, "Please download connect bot",
 					Toast.LENGTH_LONG).show();
 		}
