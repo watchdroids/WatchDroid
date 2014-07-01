@@ -27,6 +27,8 @@ public class SSH extends Activity {
 			System.out.println("App already installed on your phone");
 		} else {
 			System.out.println("App is not installed on your phone");
+			Toast.makeText(SSH.this, "Please download connect bot",
+					Toast.LENGTH_LONG).show();
 		}
 	}
 
