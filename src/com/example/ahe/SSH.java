@@ -23,10 +23,24 @@ public class SSH extends Activity {
 			 * .getLaunchIntentForPackage("org.connectbot");
 			 * startActivity(LaunchIntent);
 			 */
+			Thread thread = new Thread() {
+				@Override
+				public void run() {
+					try {
+						while (true) {
+							sleep(1000);
+							Intent SSHActivity = new Intent(SSH.this,
+									SshConnection.class);
+							startActivity(SSHActivity);
+						}
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			};
 
-			Intent SSHActivity = new Intent(SSH.this,
-					SshConnection.class);
-			startActivity(SSHActivity);
+			thread.start();
+
 		} else {
 			Toast.makeText(SSH.this, "Please download connect bot",
 					Toast.LENGTH_LONG).show();
