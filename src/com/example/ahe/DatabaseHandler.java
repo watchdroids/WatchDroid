@@ -1,3 +1,5 @@
+/* This class is the database handler to hold all the sql code*/
+
 package com.example.ahe;
 
 import java.util.ArrayList;

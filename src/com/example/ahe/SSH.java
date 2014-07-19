@@ -1,3 +1,5 @@
+/*This class checks if the device has the applications needed to for an ssh connection*/
+
 package com.example.ahe;
 
 import android.app.Activity;

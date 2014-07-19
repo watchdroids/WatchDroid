@@ -1,3 +1,4 @@
+/*Handles all connections for secure shell/connectbot */
 package com.example.ahe;
 
 import android.app.Activity;

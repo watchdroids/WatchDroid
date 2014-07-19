@@ -1,3 +1,4 @@
+/* This class is for the database model device*/
 package com.example.ahe;
 
 public class Device {

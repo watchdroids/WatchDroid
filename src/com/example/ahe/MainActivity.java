@@ -1,3 +1,5 @@
+/*This is main activity which holds the begining menu*/
+
 package com.example.ahe;
 
 import java.util.ArrayList;

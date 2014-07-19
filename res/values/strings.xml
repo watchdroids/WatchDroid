@@ -5,5 +5,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="Connect_pineapple">Connect to Wifi Pineapple</string>
     <string name="unable_pineapple">Unable to connect to wifi pineapple. Check to make sure you are connected to it via wifi</string>
-
+    <string name="submit">Submit</string>
+    
 </resources>
