@@ -88,6 +88,17 @@ public class MainActivity extends Activity {
 					break;
 				case 3:
 					// Web auditing
+					Intent WifiSlideActivity = new Intent(
+							MainActivity.this,
+							GoogleDorkScanner.class);
+					Bundle bndlanimation = ActivityOptions
+							.makeCustomAnimation(
+									getApplicationContext(),
+									R.anim.anamation,
+									R.anim.anamation2)
+							.toBundle();
+					startActivity(WifiSlideActivity,
+							bndlanimation);
 					break;
 				case 4:
 					// ssh
