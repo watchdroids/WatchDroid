@@ -38,9 +38,7 @@ public class GoogleDorkScanner extends Activity implements OnClickListener {
 		case R.id.bSumbit:
 			googleDorkTxt = googleDork.getText().toString();
 			try {
-				Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-				intent.putExtra(SearchManager.QUERY, googleDorkTxt);
-				startActivity(intent);
+
 			} catch (Exception e) {
 
 			}
